@@ -23,7 +23,7 @@ export const fetchTicket = createAsyncThunk(
         throw new Error("Ошибка сервера 404");
       }
       const data = await result.json();
-      console.log(data);
+
       if (data.stop) {
         throw new Error("Все билеты загружены");
       }
