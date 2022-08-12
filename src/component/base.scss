@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+$text-color: #4a4a4a;
+$acent: #2196F3;
+
+@mixin text-decoration($weight) {
+  color: $text-color;
+  font-family: "Open Sans", sans-serif;
+  font-weight: $weight;
+}
+
+%box {
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}

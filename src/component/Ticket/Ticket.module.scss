@@ -1,0 +1,53 @@
+@import "../base";
+
+.background {
+  @extend %box;
+  width: 502px;
+  height: 184px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  p {
+    box-sizing: border-box;
+    @include text-decoration(600);
+    color: $acent;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+    margin-right: auto;
+    padding-top: 6px;
+  }
+
+  img {
+    margin-right: 50px;
+  }
+
+  table {
+    margin-top: 10px;
+    width: 100%;
+    border-spacing: 0;
+    tr {
+      box-sizing: border-box;
+      @include text-decoration(600);
+      font-size: 14px;
+      line-height: 21px;
+      td {
+        width: 141px;
+      }
+    }
+    .header {
+      @include text-decoration(600);
+      color: #a0b0b9;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      td {
+        box-sizing: border-box;
+        padding-top: 10px;
+      }
+    }
+  }
+}
